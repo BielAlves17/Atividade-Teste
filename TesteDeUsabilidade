@@ -1,0 +1,61 @@
+
+doc_usabilidade = Document()
+
+
+doc_usabilidade.add_heading("Teste de Usabilidade: Heurísticas de Nielsen", level=1)
+
+
+doc_usabilidade.add_heading("Heurística 1: Feedback do Sistema", level=2)
+doc_usabilidade.add_paragraph(
+    "Objetivo: Garantir que o sistema forneça feedback claro e imediato para as ações realizadas pelos usuários."
+)
+doc_usabilidade.add_paragraph("Passos:", style="Heading 3")
+doc_usabilidade.add_paragraph("1. Realizar login com credenciais válidas e inválidas.", style="List Number")
+doc_usabilidade.add_paragraph("2. Submeter um formulário de cadastro com e sem erros.", style="List Number")
+doc_usabilidade.add_paragraph("Resultado esperado: Mensagens claras são exibidas para indicar o sucesso ou erro das ações realizadas.")
+
+
+doc_usabilidade.add_heading("Heurística 2: Controle e Liberdade do Usuário", level=2)
+doc_usabilidade.add_paragraph(
+    "Objetivo: Verificar se o sistema permite que os usuários corrijam ações facilmente, como cancelar ou desfazer operações."
+)
+doc_usabilidade.add_paragraph("Passos:", style="Heading 3")
+doc_usabilidade.add_paragraph("1. Iniciar um processo de cadastro e cancelar antes de finalizar.", style="List Number")
+doc_usabilidade.add_paragraph("2. Tentar editar informações em um formulário antes de submetê-lo.", style="List Number")
+doc_usabilidade.add_paragraph("Resultado esperado: O sistema permite que os usuários cancelem ou modifiquem suas ações sem dificuldades.")
+
+
+doc_usabilidade.add_heading("Heurística 3: Consistência e Padrões", level=2)
+doc_usabilidade.add_paragraph(
+    "Objetivo: Avaliar se a interface segue padrões de design consistentes e convenções conhecidas."
+)
+doc_usabilidade.add_paragraph("Passos:", style="Heading 3")
+doc_usabilidade.add_paragraph("1. Navegar por diferentes páginas do sistema.", style="List Number")
+doc_usabilidade.add_paragraph("2. Verificar se botões, menus e elementos possuem estilos consistentes.", style="List Number")
+doc_usabilidade.add_paragraph("Resultado esperado: O sistema segue padrões de design consistentes em toda a interface.")
+
+
+doc_usabilidade.add_heading("Heurística 4: Prevenção de Erros", level=2)
+doc_usabilidade.add_paragraph(
+    "Objetivo: Garantir que a interface previna erros antes que eles ocorram."
+)
+doc_usabilidade.add_paragraph("Passos:", style="Heading 3")
+doc_usabilidade.add_paragraph("1. Tentar enviar um formulário com campos obrigatórios em branco.", style="List Number")
+doc_usabilidade.add_paragraph("2. Inserir dados em formatos incorretos (ex: texto em campos numéricos).", style="List Number")
+doc_usabilidade.add_paragraph("Resultado esperado: O sistema impede ações inválidas e exibe mensagens de orientação para corrigir os erros.")
+
+
+doc_usabilidade.add_heading("Heurística 5: Ajuda e Documentação", level=2)
+doc_usabilidade.add_paragraph(
+    "Objetivo: Avaliar se o sistema fornece ajuda clara e acessível aos usuários."
+)
+doc_usabilidade.add_paragraph("Passos:", style="Heading 3")
+doc_usabilidade.add_paragraph("1. Procurar mensagens de ajuda ou instruções em campos complexos.", style="List Number")
+doc_usabilidade.add_paragraph("2. Testar a funcionalidade de FAQ ou guia de usuário, se disponível.", style="List Number")
+doc_usabilidade.add_paragraph("Resultado esperado: O sistema oferece informações úteis e facilmente acessíveis para orientar os usuários.")
+
+
+file_path_usabilidade = "/mnt/data/Teste_Usabilidade_Nielsen.docx"
+doc_usabilidade.save(file_path_usabilidade)
+
+file_path_usabilidade
